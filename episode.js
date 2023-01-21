@@ -12,7 +12,7 @@ async function getCurrPageImageUrls(episodePageUrl) {
         0,
         0
     ).iterateNext().parentElement.parentElement.nextElementSibling.nextElementSibling
-    return [...imagesContainerEl.querySelectorAll("img.imageFade")].map(el => `https://cdni.fancaps.net/file/fancaps-animeimages/${getImageId(el.src)}.jpg`)
+    return [...imagesContainerEl.querySelectorAll("img.imageFade")].map(el => `https://cdni.fancaps.net/file/fancaps-tvimages/${getImageId(el.src)}.jpg`)
 }
 
 const GET_EPISODE_PROMISE_AMOUNT = 20
